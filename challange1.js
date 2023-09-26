@@ -9,20 +9,22 @@ const readline = require('readline').createInterface({
     output: process.stdout
 });
 
+// prompt student for marks
+// run function that generates Grades from inputs
 readline.question('What is your mark?  ', (marks) => {
     console.log('Your generated grade is ');
     generateGrade(marks);
     readline.close();
 });
 
-
+// when tty is closed, run exit script, say goodbye
 readline.on('close', ()=> {
     console.log('Marks to Grade. Bye');
     process.exit();
 })
 
 
-
+//function to generate grades from marks inputs
 function generateGrade(marks) {
     if (isNaN(marks) || marks < 0 || marks > 100) { // condition statement(using logical operators)
         console.log('Please enter a valid grade\n numbered between 0 and 100');
