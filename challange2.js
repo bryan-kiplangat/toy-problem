@@ -5,11 +5,12 @@
 // run npm install prompt-sync
 const prompt = require("prompt-sync")();
 
+// calculate driving poins 
 function drivingPoints(speed) { 
     const speedLimit = 70;
     const speedAllowable = 75;
     const kmPerPoint = 5;
-
+     
     if (speed < speedAllowable) {
         console.log("Ok");
     } else {

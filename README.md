@@ -21,7 +21,7 @@ Write a program that takes the speed of a car as input e.g 80. If the speed is l
         For example, if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.
 
 **Setup:**
-used prompt js module
+used prompt-sync, a js module to get user prompts from the terminal
 `npm install prompt-sync`
 run challenge 2
 `node challenge2.js`
@@ -32,3 +32,13 @@ Write a program whose major task is to calculate an individual’s Net Salary by
 
 **Setup:**
 `node challenge3.js`
+
+## BubbleSort
+
+Bubble Sort repeatedly steps through the list,
+compares adjacent elements, and swaps them if they are in the wrong order.
+The pass through the list is repeated until no swaps are needed,
+which means the list is sorted!
+
+**Setup**
+`node bubble.js`
